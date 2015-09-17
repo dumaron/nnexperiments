@@ -1,4 +1,4 @@
-class Environment():
+class Environment:
     def __init__(self, rows, columns):
         self.clean = 2
         self.dirt = 0

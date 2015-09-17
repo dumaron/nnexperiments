@@ -1,17 +1,13 @@
 import multiprocessing
 import random
 
-from experiment1.neuralNetwork import NeuralNetwork
+from neuralNetwork import NeuralNetwork
 from environment import Environment
 
-
-# variabili per l'esecuzione
 num_generations = 10000
 networks_per_generation = 1000
 steps_per_network = 100
 core = 4
-
-# da qui meglio non toccare
 best_network = NeuralNetwork()
 best_network.generate(36, 36, 4)
 random.seed()
@@ -94,5 +90,3 @@ for generation in range(1, num_generations):
         best_net_steps = max_steps
 
     print(generation, best_net_steps)
-
-# print(best_network)

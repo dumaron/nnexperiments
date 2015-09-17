@@ -1,4 +1,4 @@
-from experiment1.perceptron import Perceptron
+from perceptron import Perceptron
 
 
 class NeuralNetwork:
